@@ -283,3 +283,45 @@ if __name__ == '__main__':
     # 再检查一遍
     daily_fudan.check()
     daily_fudan.close(1)
+    uid, psw = get_account()
+    # print(uid, psw)
+    zlapp_login = 'https://uis.fudan.edu.cn/authserver/login?' \
+                  'service=https://zlapp.fudan.edu.cn/site/ncov/fudanDaily'
+    code_url = "https://zlapp.fudan.edu.cn/backend/default/code"
+    daily_fudan = Zlapp(uid, psw,
+                        url_login=zlapp_login, url_code=code_url)
+    daily_fudan.login()
+
+    daily_fudan.check()
+    daily_fudan.checkin()
+    # 再检查一遍
+    daily_fudan.check()
+    daily_fudan.close(1)
+    uid, psw = get_account()
+    # print(uid, psw)
+    zlapp_login = 'https://uis.fudan.edu.cn/authserver/login?' \
+                  'service=https://zlapp.fudan.edu.cn/site/ncov/fudanDaily'
+    code_url = "https://zlapp.fudan.edu.cn/backend/default/code"
+    daily_fudan = Zlapp(uid, psw,
+                        url_login=zlapp_login, url_code=code_url)
+    daily_fudan.login()
+
+    daily_fudan.check()
+    daily_fudan.checkin()
+    # 再检查一遍
+    daily_fudan.check()
+    daily_fudan.close(1)
+    uid, psw = get_account()
+    # print(uid, psw)
+    zlapp_login = 'https://uis.fudan.edu.cn/authserver/login?' \
+                  'service=https://zlapp.fudan.edu.cn/site/ncov/fudanDaily'
+    code_url = "https://zlapp.fudan.edu.cn/backend/default/code"
+    daily_fudan = Zlapp(uid, psw,
+                        url_login=zlapp_login, url_code=code_url)
+    daily_fudan.login()
+
+    daily_fudan.check()
+    daily_fudan.checkin()
+    # 再检查一遍
+    daily_fudan.check()
+    daily_fudan.close(1)
